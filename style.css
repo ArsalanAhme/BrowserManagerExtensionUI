@@ -1,6 +1,7 @@
 body{
 
     background-color: hsl(225, 23%, 24%);
+    color: white;
 }
 
 .switch{
@@ -43,7 +44,8 @@ body{
 }
 
 input:focus + .slider{
-    box-shadow: 0 0 1px #2196F3;    
+    box-shadow: 0 0 1px red;
+    background: red; 
 }
 
 input:checked + .slider:before{
@@ -58,4 +60,33 @@ input:checked + .slider:before{
 
 .slider.round:before{
     border-radius: 50%;
+}
+
+.RemoveStyle{
+    font-weight: bold;
+}
+
+.Adjustor{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20rem;
+}
+
+#Extension-Container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.Extension-Card{
+    background-color:hsl(225, 23%, 24%);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid blue;
+
+
 }
