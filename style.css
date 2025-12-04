@@ -2,13 +2,14 @@ body{
 
     background-color: hsl(225, 23%, 24%);
     color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .switch{
 
     position: relative;
     display: inline-block;
-    width: 50px;
+    width: 40px;
     height: 25px;
 }
 
@@ -49,9 +50,9 @@ input:focus + .slider{
 }
 
 input:checked + .slider:before{
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
 }
 
 .slider.round{
@@ -64,28 +65,49 @@ input:checked + .slider:before{
 
 .RemoveStyle{
     font-weight: bold;
+    border:none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 30px;
+    
 }
+
+.RemoveStyle:hover{
+    background-color: red;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -ms-transition: .3s;
+
+
+}
+
+
+
+
 
 .Adjustor{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 15rem;
+    gap: 13rem;
+    
 }
 
 #Extension-Container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
+    gap: 40px;
     margin: 50px auto;
     max-width: 900px;
 }
 
 .Extension-Card{
     background-color:hsl(225, 23%, 24%);
-    padding: 20px;
-    border-radius: 8px;
+    padding: 40px;
+    border-radius: 30px;
     border: 1px solid blue;
 
 
