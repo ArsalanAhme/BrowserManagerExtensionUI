@@ -2,7 +2,7 @@ body{
 
     background-color: hsl(225, 23%, 24%);
     color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: "Noto Sans", sans-serif;
 }
 
 .switch{
@@ -28,8 +28,8 @@ body{
     left: 0;
     bottom: 0;
     background: #808080;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .2s;
+    transition: .2s;
 }
 
 .slider:before{
@@ -40,8 +40,8 @@ body{
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .2s;
+    transition: .2s;
 }
 
 input:focus + .slider{
@@ -65,12 +65,16 @@ input:checked + .slider:before{
 
 .RemoveStyle{
     font-weight: bold;
-    border:none;
+    /* border:none; */
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     border-radius: 30px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-width: 0.5px;
     
 }
 
@@ -118,4 +122,24 @@ input:checked + .slider:before{
 
 #Extension-List-Header{
     padding-left: 200px;
+}
+
+.Extension-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2B2F45;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    
+}
+.logo-group{
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle{
+    
 }
