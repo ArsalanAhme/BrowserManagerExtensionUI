@@ -87,6 +87,24 @@ input:checked + .slider:before{
 
 }
 
+.filter-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    border-radius: 12px;
+
+
+}
+
+.filter-buttons{
+    background-color: #2B2F45;
+    color: white;
+
+
+}
 
 
 
@@ -140,6 +158,6 @@ input:checked + .slider:before{
     align-items: center;
 }
 
-.theme-toggle{
+/* .theme-toggle{
     
-}
+} */
