@@ -11,6 +11,7 @@ body{
     display: inline-block;
     width: 40px;
     height: 25px;
+    flex-shrink: 0;
 }
 
 .switch input{
@@ -92,10 +93,6 @@ input:checked + .slider:before{
     align-items: center;
     margin-bottom: 2rem;
     margin-top: 1.5rem;
-
-
-
-
 }
 
 .filter-button{
@@ -125,16 +122,18 @@ input:checked + .slider:before{
 
 .Adjustor{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    /* flex-direction: row; */
+    justify-content: space-between;
     align-items: center;
-    gap: 13rem;
+    gap: 1rem;
+    
+
     
 }
 
 #Extension-Container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
     margin: 50px auto;
     max-width: 900px;
@@ -144,7 +143,7 @@ input:checked + .slider:before{
     background-color:hsl(225, 23%, 24%);
     padding: 40px;
     border-radius: 30px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 
 
 }
