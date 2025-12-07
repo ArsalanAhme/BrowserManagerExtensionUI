@@ -1,6 +1,4 @@
 body{
-
-
     font-family: "Noto Sans", sans-serif;
 }
 
@@ -78,18 +76,16 @@ input:checked + .slider:before{
 .light-theme .RemoveStyle{
     color: #2B2F45;
 }
+
 .dark-theme .RemoveStyle{
     color: white;
 }
-
 
 .RemoveStyle:hover{
     background-color: red;
     transition: .3s;
     -webkit-transition: .3s;
     -ms-transition: .3s;
-
-
 }
 
 .filter-bar{
@@ -124,12 +120,10 @@ input:checked + .slider:before{
 
 .btn-red{
     background-color: red;
-
 }
 
 .btn-blue{
      background-color: #2B2F45;
-
 }
 
 
@@ -138,9 +132,6 @@ input:checked + .slider:before{
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    
-
-    
 }
 
 #Extension-Container{
@@ -161,7 +152,6 @@ input:checked + .slider:before{
     padding-left: 200px;
 }
 
-
 .Extension-Header{
     display: flex;
     justify-content: space-between;
@@ -178,7 +168,6 @@ input:checked + .slider:before{
     color: white;
 }
 
-
 .light-theme .Extension-Header{
     background-color: white;
     color: black;
@@ -187,8 +176,6 @@ input:checked + .slider:before{
     display: flex;
     align-items: center;
 }
-
-
 
 .app-container{
     margin: 0 auto;
@@ -219,17 +206,12 @@ input:checked + .slider:before{
 .theme-toggle{
     border: none;
     cursor: pointer;
-    background-color: hsl(225, 23%, 24%);
     border-radius: 8px;
     padding: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s;
-}
-
-.theme-toggle:hover {
-    background-color: hsl(226, 11%, 37%);
 }
 
 .light-theme .theme-toggle{
@@ -239,3 +221,23 @@ input:checked + .slider:before{
 .light-theme .theme-toggle:hover{
     background-color: hsl(217, 61%, 90%);
 }
+
+.dark-theme .theme-toggle{
+    background-color: hsl(225, 23%, 24%);
+}
+
+.dark-theme .theme-toggle:hover{
+    background-color: hsl(226, 11%, 37%);
+}
+
+
+
+/* - gradients are images, which i did not realise
+- i figured out how a flexbox works and how constraints are
+used to effectively scale
+- i realised that using magic numbers is not such a good idea
+and that as a result, any slight changes completely mess
+up a project
+i use google first before AI, which is a lot better than
+just querying AI and copying
+*/
