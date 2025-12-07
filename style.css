@@ -1,7 +1,6 @@
 body{
 
-    background-color: hsl(225, 23%, 24%);
-    color: white;
+
     font-family: "Noto Sans", sans-serif;
 }
 
@@ -73,7 +72,6 @@ input:checked + .slider:before{
     border-radius: 30px;
     background-color: transparent;
     border-color: white;
-    color: white;
     border-width: 0.5px;
     
 }
@@ -143,17 +141,12 @@ input:checked + .slider:before{
     background-color:hsl(225, 23%, 24%);
     padding: 40px;
     border-radius: 30px;
-    /* border: 1px solid blue; */
-
 
 }
 #TitleBar{
     padding-left: 200px;
 }
 
-/* #Extension-List-Header{
-    padding-left: 200px;
-} */
 
 .Extension-Header{
     display: flex;
@@ -171,13 +164,46 @@ input:checked + .slider:before{
     align-items: center;
 }
 
-/* .theme-toggle{
-    
-} */
 
 
 .app-container{
     margin: 0 auto;
     max-width: 1100px;
     padding: 2rem;
+}
+
+.dark-theme{
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    color: white;
+
+}
+
+.light-theme{
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+
+.dark-theme .Extension-Card {
+    background-color: #2B2F45; 
+    border: 1px solid var(--neutral-700);
+}
+
+.light-theme .Extension-Card{
+    background-color: white;
+    border: 1px solid var(--neutral-300);
+}
+
+.theme-toggle{
+    border: none;
+    cursor: pointer;
+    background-color: hsl(225, 23%, 24%);
+    border-radius: 8px;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.theme-btn:hover {
+    background-color: hsl(226, 11%, 37%);
 }
