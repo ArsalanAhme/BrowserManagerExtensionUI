@@ -75,6 +75,13 @@ input:checked + .slider:before{
     border-width: 0.5px;
     
 }
+.light-theme .RemoveStyle{
+    color: #2B2F45;
+}
+.dark-theme .RemoveStyle{
+    color: white;
+}
+
 
 .RemoveStyle:hover{
     background-color: red;
@@ -94,13 +101,21 @@ input:checked + .slider:before{
 }
 
 .filter-button{
-    background-color: #2B2F45;
-    color: white;
     border-radius: 100px;
     padding: 0.5rem 1.5rem;
     transition: .3s;
     -webkit-transition: .3s;
     -ms-transition: .3s;
+}
+
+.dark-theme .filter-button{
+    background-color: #2B2F45;
+    color: white;
+}
+
+.light-theme .filter-button{
+    color: black;
+    background-color:white ;
 }
 
 .filter-button:hover{
@@ -120,7 +135,6 @@ input:checked + .slider:before{
 
 .Adjustor{
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
@@ -152,12 +166,22 @@ input:checked + .slider:before{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2B2F45;
     border-radius: 12px;
     padding: 1rem 2rem;
     margin-bottom: 2rem;
     margin-top: 1.5rem;
     
+}
+
+.dark-theme .Extension-Header{
+    background-color: #2B2F45;
+    color: white;
+}
+
+
+.light-theme .Extension-Header{
+    background-color: white;
+    color: black;
 }
 .logo-group{
     display: flex;
@@ -204,6 +228,14 @@ input:checked + .slider:before{
     transition: background-color 0.2s;
 }
 
-.theme-btn:hover {
+.theme-toggle:hover {
     background-color: hsl(226, 11%, 37%);
+}
+
+.light-theme .theme-toggle{
+    background-color: hsl(223, 19%, 93%);
+}
+
+.light-theme .theme-toggle:hover{
+    background-color: hsl(217, 61%, 90%);
 }
