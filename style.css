@@ -44,8 +44,12 @@ body{
 
 input:focus + .slider{
     box-shadow: 0 0 1px red;
-    background: red; 
 }
+
+input:checked + .slider {
+    background-color: #FA5757;
+}
+
 
 input:checked + .slider:before{
     -webkit-transform: translateX(20px);
