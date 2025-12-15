@@ -108,12 +108,10 @@ input:checked + .slider:before{
     transition: .3s;
     -webkit-transition: .3s;
     -ms-transition: .3s;
-}
-
- .filter-button{
     background-color: #2B2F45;
     color: white;
 }
+
 
 .light-theme .filter-button{
     color: black;
@@ -121,6 +119,10 @@ input:checked + .slider:before{
 }
 
 .filter-button:hover{
+    background-color: red;
+}
+
+.filter-button.selected {
     background-color: red;
 }
 
