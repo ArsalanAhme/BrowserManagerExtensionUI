@@ -1,5 +1,7 @@
 body{
     font-family: "Noto Sans", sans-serif;
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    color: white;
 }
 
 .switch{
@@ -81,7 +83,7 @@ input:checked + .slider:before{
     color: #2B2F45;
 }
 
-.dark-theme .RemoveStyle{
+ .RemoveStyle{
     color: white;
 }
 
@@ -108,7 +110,7 @@ input:checked + .slider:before{
     -ms-transition: .3s;
 }
 
-.dark-theme .filter-button{
+ .filter-button{
     background-color: #2B2F45;
     color: white;
 }
@@ -122,13 +124,13 @@ input:checked + .slider:before{
     background-color: red;
 }
 
-.btn-red{
+/* .btn-red{
     background-color: red;
 }
 
 .btn-blue{
      background-color: #2B2F45;
-}
+} */
 
 
 .Adjustor{
@@ -167,10 +169,11 @@ input:checked + .slider:before{
     
 }
 
-.dark-theme .Extension-Header{
+.Extension-Header{
     background-color: #2B2F45;
     color: white;
 }
+
 
 .light-theme .Extension-Header{
     background-color: white;
@@ -187,17 +190,15 @@ input:checked + .slider:before{
     padding: 2rem;
 }
 
-.dark-theme{
-    background: linear-gradient(180deg, #040918 0%, #091540 100%);
-    color: white;
 
-}
+
+
 
 .light-theme{
     background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
 }
 
-.dark-theme .Extension-Card {
+.Extension-Card {
     background-color: #2B2F45; 
     border: 1px solid var(--neutral-700);
 }
@@ -205,6 +206,7 @@ input:checked + .slider:before{
 .light-theme .Extension-Card{
     background-color: white;
     border: 1px solid var(--neutral-300);
+    color: black;
 }
 
 .theme-toggle{
@@ -226,11 +228,11 @@ input:checked + .slider:before{
     background-color: hsl(217, 61%, 90%);
 }
 
-.dark-theme .theme-toggle{
+.theme-toggle{
     background-color: hsl(225, 23%, 24%);
 }
 
-.dark-theme .theme-toggle:hover{
+.theme-toggle:hover{
     background-color: hsl(226, 11%, 37%);
 }
 
