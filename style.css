@@ -2,6 +2,8 @@ body{
     font-family: "Noto Sans", sans-serif;
     background: linear-gradient(180deg, #040918 0%, #091540 100%);
     color: white;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .switch{
